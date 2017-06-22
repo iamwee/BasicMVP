@@ -8,4 +8,6 @@ public interface MainContractPresenter {
     void showToast(String s);
 
     void add(int a, int b);
+
+    void getDataAsync();
 }

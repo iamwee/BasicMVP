@@ -26,4 +26,14 @@ public class MainPresenter implements MainContractPresenter {
         int result = model.add(a, b);
         view.onShowToast(String.valueOf(result));
     }
+
+    @Override
+    public void getDataAsync() {
+        model.getData(new MainModel.Callback() {
+            @Override
+            public void onResponse(String result) {
+                view.onShowToast(result);
+            }
+        });
+    }
 }

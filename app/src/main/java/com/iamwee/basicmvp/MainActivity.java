@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity implements MainContractView 
         presenter.showToast("hello, world");
 
         presenter.add(1, 2);
+
+        presenter.getDataAsync();
     }
 
     @Override
