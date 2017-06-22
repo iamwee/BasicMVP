@@ -23,11 +23,6 @@ public class MainActivity extends AppCompatActivity implements MainContractView 
     }
 
     @Override
-    public void setPresenter(MainContractPresenter presenter) {
-        this.presenter = presenter;
-    }
-
-    @Override
     public void onShowToast(String message) {
         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
     }

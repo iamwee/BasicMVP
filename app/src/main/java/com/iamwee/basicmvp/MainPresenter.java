@@ -12,7 +12,6 @@ public class MainPresenter implements MainContractPresenter {
     public MainPresenter(MainContractView view){
         model = new MainModel();
         this.view = view;
-        this.view.setPresenter(this);
     }
 
     @Override

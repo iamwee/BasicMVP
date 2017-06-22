@@ -5,7 +5,6 @@ package com.iamwee.basicmvp;
  */
 
 public interface MainContractView {
-    void setPresenter(MainContractPresenter presenter);
 
     void onShowToast(String message);
 }
